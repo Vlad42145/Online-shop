@@ -1,0 +1,221 @@
+.product{
+    .wrapper{
+        @extend %container;
+        .photos{
+            width: 40%;
+            margin-bottom: 50px;
+            .cover{
+                @include cover(100%);
+                background-color: $lightgray;
+                img{
+                    object-fit: contain;
+                    transform: scale(0.8);
+                }
+            }
+            .container{
+                @extend %container;
+                margin-top: 5%;
+                .cover{
+                    width: 30%;
+                    padding-top: 30%;
+                }
+            }
+        }
+        .product-info{
+            width: 55%;
+            h3{
+                @include font(700);
+                text-transform: capitalize;
+                font-size: 19px;
+            }
+            .product-name{
+                @extend %container;
+                h1{
+                    @include font(800);
+                    text-transform: uppercase;
+                    font-size: 36px;
+                    color: $mainBlack;
+                    &.price{
+                        color: $orange;
+                    }
+                }
+                
+            }
+            .description{
+                @include font(400);
+                font-size: 14px;
+                color: $gray;
+                text-align: justify;
+                margin: 20px 0;
+                line-height: 0.6cm;
+            }
+            .settings{
+                @extend %container;
+                    .size,.color{
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                    }
+                    .size{
+                        p{
+                            @include font(500);
+                            text-transform: uppercase;
+                            color: $gray;
+                            cursor: pointer;
+                            &.active{
+                                color: $black;
+                                border-bottom: 1px solid $black;
+                            }
+                        }
+                    }
+                    .color{
+                        .ellipse-container{
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .ellipse{
+                                width: 18px;
+                                height: 18px;
+                                border-radius: 100%;
+                                filter: brightness(0.8);
+                                cursor: pointer;
+                                &.active{
+                                    filter: brightness(1);
+                                    width: 14px;
+                                    height: 14px;
+                                    box-shadow: 0 0  5px 4px rgba($color: $orange, $alpha: 0.2);
+                                }
+                            }
+                        }
+                    }
+                
+            }
+            .card-counter{
+                margin-top: 40px;
+                box-shadow: 0 0 5px 3px rgba($color: #000000, $alpha: 0.05);
+                padding: 20px;
+                margin-bottom: 40px;
+                .counter-container{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    margin-bottom: 60px;
+                    
+                    .container-stock{
+                        @extend %container;
+                        svg{
+                            margin-right: 10px;
+                        }
+                        p{
+                            @include font(400);
+                            font-size: 14px;
+                            color: $gray;
+                        }
+                    }
+                    
+                }
+                .to-cart{
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                    .btn.gray{
+                        margin-right: 10px;
+                    }
+                }
+                
+            }
+            .container-info{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 20px;
+                p{
+                    @include font(400);
+                    font-size: 14px;
+                    color: $gray;
+                    text-align: justify;
+                    
+                }
+            }
+        }
+    }
+}
+.review{
+    .wrapper{
+        .information{
+            border: 1px solid $lightgray;
+            border-radius: 5px;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .container-descr{
+                width: 40%;
+                margin-bottom: 30px;
+                @extend %container;
+                h4{
+                    @include font(500);
+                    font-size: 18px;
+                    color: $gray;
+                    &:first-child{
+                        color: $mainBlack;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+
+            }
+            p{
+                @include font(400);
+                width: 50%;
+                text-align: center;
+                line-height: 0.6cm;
+                font-size: 14px;
+                color: $gray;
+            }
+        }
+    }
+}
+.cards{
+    h2{
+        text-align: start;
+    }
+}
+.counter{
+                        display: flex;
+                        border: 1px solid $gray;
+                        border-radius: 5px;
+                        align-items: center;
+                        height: 30px;
+                        width: fit-content;
+                        .btn{
+                            @include font(700);
+                            padding: 5px 10px;
+                            transition: 0.2s;
+                            &:hover{
+                                background-color: $orange;
+                                cursor: pointer;
+                                color: $white;
+                            }
+                            &.minus{
+                                border-radius: 4px 0 0 4px;
+                                height: 30px;
+                                @include font(300);
+                                font-size: 20px;
+                            }
+                            &.plus{
+                                border-radius: 0 4px 4px 0;
+                                height: 30px;
+                                @include font(300);
+                                font-size: 20px;
+                            }
+                        }
+                        .quantity{
+                            @include font(500);
+                            width: 60px;
+                            text-align: center;
+                        }
+                    }
