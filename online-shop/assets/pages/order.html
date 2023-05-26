@@ -1,0 +1,111 @@
+
+   
+    <section class="page-title">
+        <h2>cheakout cart</h2>
+        <div class="source">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">cheakout</a>
+            
+        </div>
+    </section>
+    <section class="order">
+        <div class="wrapper">
+            <form action="">
+                <h2>Billing details</h2>
+                <div class="container">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Surname">
+                </div>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Password">
+                <label class="checkbox-container" for="create-account" >
+                    <input type="checkbox" name="create-account" id="create-account"  onchange="changeCheckbox(this)" hidden>
+                    <div class="checkbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> 
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> 
+                        </svg>
+                    </div>
+                    <span>Create an account?</span>
+                </label>
+                <h3>order notes</h3>
+                <textarea placeholder="Describe your problem"></textarea>
+            </form>
+            <div class="payment-container">
+                <div class="check-order">
+                    <h2>your order</h2>
+                    <div class="text-container">
+                        <h3>Product</h3>
+                        <h3>total</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Soft denim bermuda shorts x1</p>
+                        <p>$45.00</p>
+                    </div>
+                    <div class="text-container">
+                        <p>Fine Kint Hat x2</p>
+                        <p>$120.00</p>
+                    </div>
+                    <div class="text-container">
+                        <p class="bold">Shipping</p>
+                        <p class="bold">Free Shipping</p>
+                    </div>
+                    <div class="text-container">
+                        <p class="bold">Subtotal</p>
+                        <p>$165.00</p>
+                    </div>
+                    <div class="text-container">
+                        <h3>Total</h3>
+                        <h3>$165.00</h3>
+                    </div>
+                </div>
+                <div class="payment">
+                    <h2>Payment</h2>
+                    <div class="card-payment">
+                        <label class="checkbox-container" for="kaspi">
+                        <input type="checkbox" name="kaspi" id="kaspi" onchange="changeCheckbox(this)" hidden>
+                        <div class="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> 
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> 
+                            </svg>
+                        </div>
+                        <span>Direct bank transfer</span>
+                    </label>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor tempora, odit, voluptate in voluptatum recusandae accusantium aperiam iusto explicabo animi perspiciatis quod veritatis non. Labore quo quasi repellendus corrupti laboriosam.</p>
+                    <label class="checkbox-container" for="visa" >
+                        <input type="checkbox" name="visa" id="visa" onchange="changeCheckbox(this)" hidden>
+                        <div class="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> 
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> 
+                            </svg>
+                        </div>
+                        <span>Cheak payment</span>
+                    </label>
+                    <label class="checkbox-container" for="mastercard">
+                        <input type="checkbox" name="mastercard" id="mastercard" onchange="changeCheckbox(this)" hidden>
+                        <div class="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> 
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> 
+                            </svg>
+                        </div>
+                        <span>Carsh on delivery</span>
+                    </label>
+                    <label class="checkbox-container" for="Paypal">
+                        <input type="checkbox" name="Paypal" id="Paypal" onchange="changeCheckbox(this)" hidden checked >
+                        <div class="checkbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> 
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> 
+                            </svg>
+                        </div>
+                        <span>Paypal</span>
+                    <label/;>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="btn-container">
+                <input type="button" value="place order" class="btn orange">
+            </div>
+        </div>
+    </section>
+    

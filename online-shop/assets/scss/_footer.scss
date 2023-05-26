@@ -1,0 +1,196 @@
+footer{
+    background-color: $lightgray;
+    padding-top: 50px;
+    .container{
+        @extend %container;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            @include font(700);
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .news{
+            @include font(500);
+            font-size: 14px;
+            color: $gray;
+            margin-bottom: 30px;
+
+        }
+        .container-mail{
+            @extend %container;
+            .square1{
+                height: 40px;
+                width: 40px;
+                position: relative;
+                background-color: $white;
+                border: 1px solid $gray;
+                border-right: 0;
+                border-radius: 5px 0 0 5px;
+                margin-bottom: 100px;
+                .letter{
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    fill: $gray;
+                }
+                
+            }
+            .mail{
+                    border: 1px solid $gray;
+                    border-left: 0;
+                    border-right: 0;
+                    background-color: $white;
+                    padding: 12.5px 0;
+                    width: 550px;
+                    margin-bottom: 100px;
+                    &::placeholder{
+                        @include font(400);
+                        color: $gray;
+                        font-size: 14px;
+                    }
+                }
+            .square2{
+                height: 40px;
+                width: 60px;
+                position: relative;
+                background-color: $white;
+                border: 1px solid $gray;
+                border-left: 0;
+                border-radius: 0 5px 5px 0;
+                transition: 0.2s;
+                margin-bottom: 100px;
+                .send{
+                    width: 19px;
+                    height: 19px;
+                    position: absolute;
+                    top: 11px;
+                    right: 19px;
+                    fill: $gray;
+                    transition: 0.2s;
+                }
+                &:hover{
+                    background-color: $orange;
+                    border: 1px solid $orange;
+                    cursor: pointer;
+                    .send{
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+    .container-pictures{
+        @extend %container;
+        margin-bottom: 60px;
+        .cover{
+            @include cover(100%);
+            padding-top: 15%;
+        }
+    }
+    .container-footer{
+        @extend %container;
+        margin-bottom: 80px;
+        .block-info{
+            width: 32%;
+            .logo{
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 20px;
+                h2{
+                    @include font(700);
+                    text-transform: uppercase;
+                    font-size: 30px;
+                }
+                .circle{
+                    width: 8px;
+                    height: 8px;
+                    background-color: $orange;
+                    border-radius: 100%;
+                }
+            }
+            p{
+                @include font(500);
+                font-size: 14px;
+                margin-bottom: 40px;
+                color: $gray;
+            }
+            .container-social{
+                @extend %container;
+                width: 50%;
+                .cover{
+                    @include cover(10%);
+                    padding-top: 10%;
+                    img{
+                        scale: 2;
+                        object-fit: contain;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .block-link{
+            display: flex;
+            flex-direction: column;
+            height: 206px;
+            h3{
+               @include font(700);
+               font-size: 18px;
+               margin-bottom: 20px; 
+            }
+            .container-block-nav{
+                @extend %container;
+               .block-nav{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-right: 50px;
+                    a{
+                        @include font(400);
+                        font-size: 14px;
+                        color: $gray;
+                    }
+                } 
+            }
+            
+        }
+        .block-contact{
+            width: 23%;
+            h3{
+                @include font(700);
+                font-size: 18px;
+                margin-bottom: 20px;
+
+            }
+            .container-contact{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                svg{
+                    margin-right: 15px;
+                }
+                p{
+                    @include font(400);
+                        font-size: 14px;
+                        color: $gray;
+                }
+            }
+        }
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        background-color: $gray;
+        margin-bottom: 10px
+    }
+    .line-p{
+        @include font(400);
+        font-size: 14px;
+        text-align: center;
+        color: $gray;
+        padding-bottom: 10px;
+    }
+}

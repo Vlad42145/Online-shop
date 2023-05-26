@@ -1,0 +1,165 @@
+
+    <section class="page-title">
+        <h2>Shopping cart</h2>
+        <div class="source">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Shopping cart</a>
+        </div>
+    </section>
+    <section class="basket">
+        <div class="wrapper">
+            <div class="table-basket">
+                <div class="columns-name">
+                    <div class="column" id="first">
+                        <p>Product</p>
+                    </div>
+                    <div class="column" id="second">
+                        <p>Price</p>
+                    </div>
+                    <div class="column" id="third">
+                        <p>Quantity</p>
+                    </div>
+                    <div class="column" id="fourth">
+                        <p>Total</p>
+                    </div>
+                    <div class="column" id="fifth"></div>
+                </div>
+                <div class="selected-products">
+                    <div class="product">
+                        <div class="column" id="first">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="./assets/img/t-shirt.png" alt="">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="card-desc">
+                                    <p class="name">T-Shirt summer collection 2023</p>
+                                    <div class="settings">
+                                        <div class="ellipse" id="black"></div>
+                                        <p class="size">xl</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="column" id="second">
+                            <p>$45.00</p>
+                        </div>
+                        <div class="column" id="third">
+                            <div class="counter">
+                                <input type="button" value="-" class="btn minus" onclick="changeCount('minus',this)">
+                                <p class="quantity">1</p>
+                                <input type="button" value="+" class="btn plus" onclick="changeCount('plus',this)">
+                            </div>
+                        </div>
+                        <div class="column" id="fourth">
+                            <p>$45.00</p>
+                        </div>
+                        <div class="column" id="fifth">
+                            <p class="delete" onclick="deleteProduct()">x</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="column" id="first">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="./assets/img/t-shirt.png" alt="">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="card-desc">
+                                    <p class="name">T-Shirt summer collection 2023</p>
+                                    <div class="settings">
+                                        <div class="ellipse" id="black"></div>
+                                        <p class="size">xl</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="column" id="second">
+                            <p>$45.00</p>
+                        </div>
+                        <div class="column" id="third">
+                            <div class="counter">
+                                <input type="button" value="-" class="btn minus" onclick="changeCount('minus',this)">
+                                <p class="quantity">1</p>
+                                <input type="button" value="+" class="btn plus" onclick="changeCount('plus',this)">
+                            </div>
+                        </div>
+                        <div class="column" id="fourth">
+                            <p>$45.00</p>
+                        </div>
+                        <div class="column" id="fifth">
+                            <p class="delete">x</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="column" id="first">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="./assets/img/t-shirt.png" alt="">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="card-desc">
+                                    <p class="name">T-Shirt summer collection 2023</p>
+                                    <div class="settings">
+                                        <div class="ellipse" id="black"></div>
+                                        <p class="size">xl</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="column" id="second">
+                            <p>$45.00</p>
+                        </div>
+                        <div class="column" id="third">
+                            <div class="counter">
+                                <input type="button" value="-" class="btn minus" onclick="changeCount('minus',this)">
+                                <p class="quantity">1</p>
+                                <input type="button" value="+" class="btn plus" onclick="changeCount('plus',this)">
+                            </div>
+                        </div>
+                        <div class="column" id="fourth">
+                            <p>$45.00</p>
+                        </div>
+                        <div class="column" id="fifth">
+                            <p class="delete">x</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p class="clear">clear all</p>
+                <p class="update">update cart</p>
+            </div>
+        </div>
+    </section>
+    <section class="check">
+        <div class="wrapper">
+            
+                <div class="cart-total">
+                    <h3>Cart Total</h3>
+                    <div class="container">
+                        <p class="total">Subtotal:</p>
+                        <p class="price">$165.00</p>
+                    </div>
+                    <div class="container">
+                        <p class="total">Shipping:</p>
+                        <p class="ship">Free shipping</p>
+                    </div>
+                    <div class="container">
+                        <p class="caculate">Caculate shipping</p>
+                        <p></p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="container">
+                        <p class="total">Total:</p>
+                        <p>$165.00</p>
+                    </div>
+                </div>
+                <input type="button" value="checkout" class="btn orange">
+            
+            
+        </div>
+    </section>
+    
+  
